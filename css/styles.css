@@ -266,8 +266,11 @@ footer span{
   margin-left: 10.5rem;
   width: 5rem;
 }
+#social ion-icon{
+  color: var(--fundo);
+}
   #galeria iframe{
-    width: 380px;
+    width: 360px;
     margin-left: .5rem;
     padding: 5px;
   }
