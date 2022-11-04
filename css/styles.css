@@ -98,7 +98,7 @@ h1,h2,h3,h4,h5,h6{
   color: var(--titulo);
 }
 #header{
-  background: url('../img/banner.png') no-repeat;
+  background: url('../img/img02.png') no-repeat;
   background-size: cover;
   overflow: hidden;
   min-width:100%;
@@ -162,6 +162,11 @@ h1,h2,h3,h4,h5,h6{
 #somos{
   display: flex;
 }
+#somos figcaption{
+  color: #FFF;
+  font-size: 1rem;
+  text-align: center;
+}
 #somos h2{
   font-size: 1rem;
   padding: .5rem;
@@ -173,6 +178,13 @@ h1,h2,h3,h4,h5,h6{
   margin-right: 2rem;
   letter-spacing: .2rem;
   line-height: 1.5rem;
+}
+summary{
+  color: #FFF;
+  font-size: 1rem;
+  margin-top: .6rem;
+  font-style: italic;
+  cursor: pointer;
 }
 #doacao h2{
   font-size: 1rem;
