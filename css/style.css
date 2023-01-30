@@ -219,7 +219,9 @@ iframe{
     font-size: 1rem;
     text-align: justify;
   } 
-  
+  .social{
+    margin-bottom: 2rem;
+  }
   #galeria{
     display: flex;
     flex-direction: column;
