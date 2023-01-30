@@ -33,7 +33,7 @@ iframe{
 
 /* Header e Banner */
 #header{
-  min-height: 100vh;
+  min-height: 120vh;
   background: linear-gradient(to top, rgba(0,0,0,0.7)80%,rgba(0,0,0,0.7)80%),url("../img/img02.png");
   /* background-image: url("../img/img02.png"); */
   background-size: cover;
@@ -265,6 +265,7 @@ iframe{
   }
   #footer{
     flex-direction: column;
+    margin-top: 3rem;
   }
   #footer span{
     max-width: 100%;
