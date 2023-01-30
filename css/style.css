@@ -36,13 +36,13 @@ iframe{
 
 /* Header e Banner */
 #header{
-  min-height: 90vh;
+  min-height: 100vh;
   background: linear-gradient(to top, rgba(0,0,0,0.7)80%,rgba(0,0,0,0.7)80%),url("../img/img02.png");
   /* background-image: url("../img/img02.png"); */
   background-size: cover;
   background-position: center;
   color: var(--primary-color);
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   position: relative;
 }
 .inner-header{
@@ -110,7 +110,7 @@ iframe{
   font-style: italic;
 }
 .square{
-  display: block;
+  display: none;
   width: 10rem;
   height: 7rem;
   background-color: var(--fundo);
@@ -120,7 +120,7 @@ iframe{
   top: 4rem;
 }
 .dots{
-  display: flex;
+  display: none;
   gap: 2rem;
   position: absolute;
   bottom: 2rem;
@@ -134,7 +134,7 @@ iframe{
 .social{
   margin-left: 60rem;
   position: absolute;
-  bottom: 2rem;
+  /* bottom: 2rem; */
 }
 
 #galeria{
@@ -244,7 +244,6 @@ iframe{
   }
   ion-icon{
     color: #FFF;
-
   }
   #navbar a{
     display: none;
@@ -285,7 +284,7 @@ iframe{
     height: 100vh;
   }
   .banner h2{
-    /* display: none; */
+    display: none;
     width: 300px;
     position: relative;
     font-size: 1rem;
@@ -294,7 +293,7 @@ iframe{
     margin-top: .7rem;
   }
   .banner p{
-    margin-top: 6rem;
+    margin-top: .1rem;
     margin-left: -50px;
     margin-right: 10px;
     padding: 5px;
