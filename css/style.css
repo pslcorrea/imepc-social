@@ -230,6 +230,15 @@ iframe{
     /* width: 80%; */
   
   }
+  #canal{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  #canal ion-icon{
+    font-size: 3rem;
+    color: var(--fundo);
+  }
   #about{
     display: flex;
     flex-direction: column;
