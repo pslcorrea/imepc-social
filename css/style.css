@@ -220,7 +220,7 @@ iframe{
     text-align: justify;
   } 
   .social{
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
   }
   #galeria{
     display: flex;
