@@ -1,0 +1,341 @@
+:root{
+  --fundo:#012677           ;
+  --titulo:#ff8716 ;
+  --primary-color:#FFF;
+  --second-color:#CCC;
+  --tercery-color:#001449  ;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+img{
+  width: 100%;
+}
+/* Geral */
+.title{
+  /* color: var(--fundo); */
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  padding: 1.5rem 2rem;
+  margin-left: 1rem;
+  border-left: 0.5rem solid var(--fundo);
+}
+ion-icon{
+  font-size: 3.5rem;
+  color: var(--fundo);
+}
+iframe{
+  width: 400px;
+  height: 300px;
+}
+
+/* Header e Banner */
+#header{
+  min-height: 90vh;
+  background: linear-gradient(to top, rgba(0,0,0,0.7)80%,rgba(0,0,0,0.7)80%),url("../img/img02.png");
+  /* background-image: url("../img/img02.png"); */
+  background-size: cover;
+  background-position: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  position: relative;
+}
+.inner-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo{
+  display: flex;
+  /* display: none; */
+  justify-content: space-between;
+  margin-left: 1rem;
+}
+#logo img{
+  width: 5rem;
+  height: 5em;
+}
+#brand{
+  background-color: var(--fundo);
+  padding: 1rem;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+#navbar{
+  display: flex;
+  /* display: none; */
+  gap: 2rem;
+  text-transform: uppercase;
+  margin-right: 2rem;
+}
+#navbar a{
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem;
+  transition: 0.5s;
+}
+#navbar a:hover{
+  color: var(--fundo);
+}
+.banner{
+  max-width: 50%;
+  padding: 4rem;
+  position: relative;
+  opacity: 0;
+  transition: 0.6s;
+}
+.banner.active{
+  opacity: 1;
+}
+.banner h2{
+  /* position: relative; */
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+  z-index: 2;
+}
+.banner p{
+  /* position: absolute; */
+  font-size: 1.5rem;
+  text-align: justify;
+  /* bottom: 60rem; */
+}
+.banner span{
+  color: var(--second-color);
+  font-style: italic;
+}
+.square{
+  display: block;
+  width: 10rem;
+  height: 7rem;
+  background-color: var(--fundo);
+  position: absolute;
+  z-index: 1;
+  left: 1.5rem;
+  top: 4rem;
+}
+.dots{
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 3rem;
+}
+.dot.active{
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--fundo);
+}
+.social{
+  margin-left: 60rem;
+  position: absolute;
+  bottom: 2rem;
+}
+
+#galeria{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+#canal{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+#canal ion-icon{
+  font-size: 4rem;
+}
+#about{
+  display: flex;
+  margin-bottom: 2rem;
+}
+#about p{
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-align: justify;
+  padding:0 2rem 0;
+}
+#about figure{
+  min-width: 30%;
+}
+#about figcaption{
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--tercery-color);
+}
+.doacao-contato{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+.conta{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: var(--fundo);
+  padding: 3rem 2rem;
+  color: var(--primary-color);
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+.contato{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 50%;
+}
+.contato h2{
+  font-size: 2rem;
+}
+.contato p{
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.contato-logo{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.contato-logo ion-icon{
+  font-size: 2rem;
+  background-color: var(--fundo);
+  color: var(--primary-color);
+  padding: 0.3rem .8rem;
+}
+.img-contato{
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--fundo);  
+  width: 35rem;
+}
+.img-contato p{
+  padding-left: 1rem;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+}
+#footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--fundo);
+  color: var(--primary-color);
+  padding: 1.5rem;
+}
+#footer span{
+  max-width: 50%;
+  font-size: 1.2rem;
+}
+#footer p{
+  font-size: 1.5rem;
+}
+/* Layout mobile */
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  #navbar a{
+    display: none;
+  }
+  #menu-mobile{
+    margin-top: 20px;
+    padding-top: 10px;
+    background-color: white;
+    height: 36vh;
+  }
+  .wrap-menu{
+    display: flex;
+    flex-direction: column;
+  }
+  .btnMenu_open{
+    width: 10%;
+    height: 100%;
+  }
+  #brand{
+    background-color: var(--fundo);
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+  #header{
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    margin-bottom: 6rem;
+  }
+  #banner-texto{
+    margin-bottom: 10rem;
+  }
+  .banner{
+    /* display: none; */
+    max-width: 50%;
+    padding: 4rem;
+    /* position: relative; */
+    opacity: 0;
+    transition: 0.6s;
+    height: 70vh;
+  }
+  .banner h2{
+    /* display: none; */
+    width: 300px;
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 2;
+  }
+  .banner p{
+    margin-top: 4rem;
+    margin-left: -50px;
+    padding: 5px;
+    /* margin-bottom: 10px; */
+    /* margin-bottom: 30rem; */
+    width: 370px;
+    position: relative;
+    font-size: 1rem;
+    text-align: justify;
+  }
+  #about{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  #about figcaption{
+    margin-bottom: 1.5rem;
+  }
+  #about p{
+    text-align: left;
+  }
+  .doacao-contato{
+    display: flex;
+    flex-direction: column;
+  }
+  .contato{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    font-size: 12px;
+    margin-right: 100px;
+    width: 100px;
+  }
+  .contato h2{
+    width: 300px;
+  }
+  .contato p{
+    text-align: left;
+    width: 350px;
+    letter-spacing: 0;
+  }
+  .img-contato{
+    width: 380px;
+  }
+  #footer{
+    flex-direction: column;
+  }
+  #footer span{
+    max-width: 100%;
+    font-size: 1.5rem;
+  }
+}

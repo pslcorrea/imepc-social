@@ -5,155 +5,210 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ImepcSocial</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https: //fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800; 1.900 & família= Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & família= Ubuntu: ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700 & display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <title>IMEPC Social </title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/btnMenu.css">
+  <link rel="stylesheet" href="css/wrap-menu.css">
   <script src="js/script.js" defer></script>
 </head>
 
 <body>
-  <div class="container">
-    <header id="header">
-      <div id="header-nav">
-        <div id="logo">
-          <div id="img-logo">
-            <img src="img/logo.png" alt="ImepcSocial">
-          </div>
-          <div id="text-logo">
-            <h2>IMEPC Social</h2>
-          </div>
-        </div>
-        <nav id="nav">
-          <button id="btn-mobile">Menu
-            <span id="hamburger"></span>
-          </button>
-          <ul id="menu">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#nosso">Nossos Trabalho</a></li>
-            <li><a href="#somos">Quem Somos</a></li>
-            <li><a href="#doacao">Doações</a></li>
-          </ul>
-        </nav>
+  <!-- header -->
+  <header id="header">
+    <div class="inner-header">
+      <!-- logo -->
+      <div id="logo">
+        <img src="/img/logo.png" alt="missão porta ceu">
+        <h2 id="brand">IMEPC Social</h2>
       </div>
-      <section id="header-content">
+      <!-- navbar -->
+      <nav id="navbar">
+        <a href="#header">inicio</a>
+        <a href="#nossos-trabalhos">nossos trabalhos</a>
+        <a href="#quem-somos">quem somos</a>
+        <a href="#doacoes">doações</a>
+      </nav>
+    </div>
+    <div id="menu-mobile">
+      <nav class="wrap-menu">
+        <div id="wrap-menu">
+          <a href="#" class="btnMenu_open"><ion-icon name="menu-outline"></ion-icon></a>
+        </div>
         <div>
-          <h1>Assistência à pessoas em situação de rua!</h1>
-          <p>Porque tive fome, e não me destes de comer; tive sede, e não me destes de beber;
-            Sendo estrangeiro, não me recolhestes; estando nu, não me vestistes; e enfermo, e na prisão, não me
-            visitastes.
-            Então eles também lhe responderão, dizendo: Senhor, quando te vimos com fome, ou com sede, ou estrangeiro,
-            ou nu, ou enfermo, ou na prisão, e não te servimos?
-            Então lhes responderá, dizendo: Em verdade vos digo que, quando a um destes pequeninos o não fizestes, não
-            o
-            fizestes a mim.
-            Mateus 25:42-45</p>
+          <ul class="menu-mobile">
+            <li class="menu-item"><a class="menu-item-action" href="#header">Inicio</a></li>
+            <li class="menu-item"><a class="menu-item-action" href="#nossos-trabalhos">nossos trabalhos</a></li>
+            <li class="menu-item"><a class="menu-item-action" href="#quem-somos">quem somos</a></li>
+            <li class="menu-item"><a class="menu-item-action" href="#doacoes">doações</a></li>
+          </ul>
         </div>
-        <section id="social">
-          <div>
-            <a href="#">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-            <a href="#">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-            <a href="https://www.youtube.com/channel/UC5EAsfhkiak5lMCWpO1fetw" target="_blank">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
+
+      </nav>
+    </div>
+    <!-- banner -->
+    <div id="banner-texto">
+      <div class="banner active">
+        <span class="square"></span>
+        <h2>Assistência à pessoas em situação de rua!</h2>
+        <p>Porque tive fome, e não me destes de comer; tive sede, e não me destes de beber;
+          <span> Sendo estrangeiro, não me recolhestes; estando nu, não me vestistes; e enfermo, e na prisão, não me
+            visitastes.</span>
+          Então eles também lhe responderão, dizendo: Senhor, quando te vimos com fome, ou com sede, ou estrangeiro,
+          ou nu, ou enfermo, ou na prisão, e não te servimos?
+          Então lhes responderá, dizendo: <span>Em verdade vos digo que, quando a um destes pequeninos o não fizestes,
+            não
+            o fizestes a mim.</span>
+          Mateus 25:42-45
+        </p>
+      </div>
+      <!-- <div class="banner ">
+      <span class="square"></span>
+      <h2>Atuem continuamente na obra de Deus!</h2>
+      <p>Por isso mesmo, <span>empenhem-se para acrescentar</span> à sua fé a virtude; à virtude o conhecimento;
+        ao conhecimento o domínio próprio; ao domínio próprio a perseverança; à perseverança a piedade;
+        à piedade a fraternidade; e à fraternidade o amor.
+        Porque, se essas qualidades existirem e estiverem crescendo em suas vidas, elas impedirão que vocês, no pleno
+        conhecimento de nosso Senhor Jesus Cristo,<span> sejam inoperantes e improdutivos.</span>
+
+        2 Pedro 1:5-8
+      </p>
+    </div> -->
+      <!-- dots -->
+      <div class="dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+      </div>
+      <!-- social -->
+      <div class="social">
+        <a href="https://www.facebook.com/missao.portaceu">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="https://instagram.com/imepc?igshid=YmMyMTA2M2Y=">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://www.youtube.com/channel/UC5EAsfhkiak5lMCWpO1fetw" target="_blank">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+      </div>
+    </div>
+    <!-- Mobile -->
+    <nav class="navbar">
+      </div><!-- desktop -->
+      </div><!-- mobile -->
+      </div><!-- center -->
+    </nav><!-- NavBar-->
+  </header>
+  <!-- Principal -->
+  <main id="nossos-trabalhos">
+    <div id="texto">
+      <h2 class="title">Nosso trabalho</h2>
+    </div>
+    <div id="galeria">
+      <div><iframe width="642" height="361" src="https://www.youtube.com/embed/bzVpHwOJeXM"
+          title="assistência-moradores-2809" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe></div>
+      <div><iframe width="642" height="361" src="https://www.youtube.com/embed/XpyfRuOzdRA"
+          title="assistência-moradores-1309" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe></div>
+      <div><iframe width="642" height="361" src="https://www.youtube.com/embed/EhtMrFKWF_g"
+          title="assistência-moradores-0609" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe></div>
+      <div><iframe width="642" height="361" src="https://www.youtube.com/embed/MzwoWmbl1vQ"
+          title="assistência-moradores-3008" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe></div>
+      <div><iframe width="642" height="361" src="https://www.youtube.com/embed/fHbEMsgQaNI"
+          title="assistência-moradores-2308" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe></div>
+      <div><iframe width="642" height="361" src="https://www.youtube.com/embed/Ja_Dh8iEn58"
+          title="assistência-moradores-1608" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe></div>
+    </div>
+  </main>
+  <!-- Canais -->
+  <section id="canal">
+    <h2 class="title">Siga-nos:</h2>
+    <a href="https://www.youtube.com/channel/UC5EAsfhkiak5lMCWpO1fetw" target="_blank">
+      <ion-icon name="logo-youtube"></ion-icon>
+    </a>
+  </section>
+  <!-- Quem somos -->
+  <section id="quem-somos">
+    <h2 class="title">Quem somos</h2>
+    <div id="about">
+      <figure>
+        <img src="/img/ap-bispa.png" width="400" height="300">
+        <figcaption>Apóstolo Luiz Carlos e Bispa Lenice</figcaption>
+      </figure>
+      <p>O evangelicalismo, evangelismo[1] ou cristianismo evangélico é um movimento cristão protestante surgido no
+        século XVII, depois da Reforma Protestante, tornando-se uma vertente organizada com o surgimento, dos
+        metodistas entre os anglicanos, dos puritanos entre os calvinistas e Igrejas Reformadas, ambos na Inglaterra
+        e
+        dos pietistas entre os luteranos na Alemanha e Escandinávia. O movimento tornou-se ainda mais significativo
+        nos Estados Unidos da América durante o Grande Despertamento dos séculos XVIII e XIX, onde conseguiu muito
+        mais membros do que na Europa. O movimento continua a atrair adeptos em nível mundial no século XXI,
+        especialmente no mundo em desenvolvimento. É um movimento que reúne vários submovimentos, sendo os
+        principais
+        Anabatismo, Igreja Batista e Pentecostalismo.</p>
+    </div>
+  </section>
+  <!-- Doações -->
+  <section id="doacoes">
+    <h2 class="title">Seja um mantenedor dessa obra!</h2>
+    <div class="doacao-contato">
+      <div class="conta">
+        <h3>Banco Bradesco</h3>
+        <h3>IGREJA MISSÃO EV. PORTA CEU</h3>
+        <h3>CNPJ - 03.08.899./0001-98</h3>
+        <h3>Agência - 2003</h3>
+        <h3>Conta - 21418-3</h3>
+      </div>
+      <div class="contato">
+        <h2>Nossos contatos:</h2>
+        <p>Se deseja fazer doações de Alimentos como: <span>Legumes, Frango e outros </span> use os canais
+          abaixo:
+        </p>
+        <div class="contato-logo">
+          <div class="img-contato">
+            <ion-icon name="mail-outline"></ion-icon>
+            <p>imepc@outlook.com</p>
           </div>
-        </section>
-      </section>
-    </header>
-    <main class="main">
-      <h2><a name="nosso">Nossos trabalhos</a></h2>
-      <div id="galeria">
-        <div><iframe width="642" height="361" src="https://www.youtube.com/embed/bzVpHwOJeXM"
-            title="assistência-moradores-2809" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe></div>
-        <div><iframe width="642" height="361" src="https://www.youtube.com/embed/XpyfRuOzdRA"
-            title="assistência-moradores-1309" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe></div>
-        <div><iframe width="642" height="361" src="https://www.youtube.com/embed/EhtMrFKWF_g"
-            title="assistência-moradores-0609" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe></div>
-        <div><iframe width="642" height="361" src="https://www.youtube.com/embed/MzwoWmbl1vQ"
-            title="assistência-moradores-3008" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe></div>
-        <div><iframe width="642" height="361" src="https://www.youtube.com/embed/fHbEMsgQaNI"
-            title="assistência-moradores-2308" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe></div>
-        <div><iframe width="642" height="361" src="https://www.youtube.com/embed/Ja_Dh8iEn58"
-            title="assistência-moradores-1608" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe></div>
-      </div>
-      <div id="canal">
-        <h2><a href="https://www.youtube.com/channel/UC5EAsfhkiak5lMCWpO1fetw" target="_blank">
-            <ion-icon name="logo-youtube" size="large"></ion-icon>
-            <span>Acompanhe-nos</span>
-          </a>
-        </h2>
-      </div>
-      <div id="somos">
-        <figure>
-          <img src="/img/ap-bispa.png" width="400" height="300">
-          <figcaption>Apóstolo Luiz Carlos e Bispa Lenice</figcaption>
-        </figure>
-        <h2><a name="somos">Quem somos</a></h2>
-        <details class="texto">
-          <summary>Saiba mais...
-          </summary>
-          <p>O evangelicalismo, evangelismo[1] ou cristianismo evangélico é um movimento cristão protestante surgido
-            no
-            século XVII, depois da Reforma Protestante, tornando-se uma vertente organizada com o surgimento, dos
-            metodistas entre os anglicanos, dos puritanos entre os calvinistas e Igrejas Reformadas, ambos na
-            Inglaterra
-            e
-            dos pietistas entre os luteranos na Alemanha e Escandinávia. O movimento tornou-se ainda mais
-            significativo
-            nos Estados Unidos da América durante o Grande Despertamento dos séculos XVIII e XIX, onde conseguiu muito
-            mais membros do que na Europa. O movimento continua a atrair adeptos em nível mundial no século XXI,
-            especialmente no mundo em desenvolvimento. É um movimento que reúne vários submovimentos, sendo os
-            principais
-            Anabatismo, Igreja Batista e Pentecostalismo.</p>
-        </details>
-      </div>
-      <div id="doacao">
-        <h2><a name="doacao">Seja um mantenedor dessa obra!</a></h2>
-        <div id="conta">
-          <h3>Banco Bradesco</h3>
-          <h3>IGREJA MISSÃO EV. PORTA CEU</h3>
-          <h3>CNPJ - 03.08.899./0001-98</h3>
-          <h3>Agência - 2003</h3>
-          <h3>Conta - 21418-3</h3>
-        </div>
-        <div id="contato">
-          <p>Se deseja fazer doações de Alimentos como: <span>Legumes, Frango e outros </span> use os canais
-            abaixo:
-          </p>
-          <h4>E-mail: imepc@outlook.com</h4>
-          <h4>Telefone: (11) 90000-1111</h4>
-          <h4>Contato: Diáconisa Adriana Flávia</h4>
+          <div class="img-contato">
+            <ion-icon name="person-outline"></ion-icon>
+            <p>Diáconisa Adriana Flávia</p>
+          </div>
+          <div class="img-contato">
+            <ion-icon name="call-outline"></ion-icon>
+            <p>(11) 90000-1111</p>
+          </div>
+          <div class="img-contato">
+            <ion-icon name="person-outline"></ion-icon>
+            <p>Presbítero Ricardo Nunes</p>
+          </div>
+          <div class="img-contato">
+            <ion-icon name="call-outline"></ion-icon>
+            <p>(11) 90000-1111</p>
+          </div>
+          <div class="img-contato">
+            <ion-icon name="location-outline"></ion-icon>
+            <p>R. Murilo Furtado, 849 Pq. Vitória São Paulo</p>
+          </div>
         </div>
       </div>
-
-    </main>
-
-    <footer>
-      <p>By Paulo Corrêa &copy; 2022 </p>
-      <span>“O pardal encontrou casa, e a andorinha, ninho para si, onde acolha os
-        seus filhotes; eu, OS SEUS ALTARES, Senhor dos Exércitos, Rei meu e Deus meu!” (Sl
-        84.3).</span>
-    </footer>
-  </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer id="footer">
+    <p>By Paulo Corrêa &copy; 2023 </p>
+    <span>“O pardal encontrou casa, e a andorinha, ninho para si, onde acolhe os
+      seus filhotes; eu, OS SEUS ALTARES, Senhor dos Exércitos, Rei meu e Deus meu!” (Sl
+      84.3).</span>
+  </footer>
   <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
