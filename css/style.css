@@ -16,7 +16,7 @@ a{
 
 .title{
   /* color: var(--fundo); */
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   padding: 1.5rem 2rem;
   margin-left: 1rem;
@@ -98,10 +98,10 @@ iframe{
   margin-bottom: 2rem;
 }
 #about p{
-  font-size: 1.5rem;
+  font-size: 1rem;
   letter-spacing: 2px;
   text-align: justify;
-  padding:0 2rem 0;
+  padding:20px;
 }
 #about figure{
   min-width: 30%;
@@ -133,10 +133,10 @@ iframe{
   max-width: 50%;
 }
 .contato h2{
-  font-size: 2rem;
+  font-size: 1rem;
 }
 .contato p{
-  font-size: 1.5rem;
+  font-size: 1rem;
   letter-spacing: 2px;
   font-weight: bold;
 }
@@ -262,7 +262,7 @@ iframe{
     letter-spacing: 0;
   }
   .img-contato{
-    width: 380px;
+    width: 320px;
   }
   #footer{
     flex-direction: column;
@@ -270,6 +270,6 @@ iframe{
   }
   #footer span{
     max-width: 100%;
-    font-size: 1.5rem;
+    font-size: .8rem;
   }
 }
