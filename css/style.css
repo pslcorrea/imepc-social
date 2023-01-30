@@ -94,13 +94,13 @@ iframe{
   opacity: 1;
 }
 .banner h2{
-  /* position: relative; */
+  position: relative;
   font-size: 3rem;
   margin-bottom: 1.2rem;
   z-index: 2;
 }
 .banner p{
-  /* position: absolute; */
+  position: absolute;
   font-size: 1.5rem;
   text-align: justify;
   /* bottom: 60rem; */
@@ -238,6 +238,10 @@ iframe{
 }
 /* Layout mobile */
 @media screen and (min-width: 320px) and (max-width: 425px) {
+  iframe{
+    /* width: 200px;
+    height: 200px; */
+  }
   #navbar a{
     display: none;
   }
@@ -261,9 +265,6 @@ iframe{
     font-size: 1.5rem;
     margin-left: 1rem;
   }
-  .title{
-    margin-left: .2rem;
-  }
   #header{
     display: flex;
     flex-direction: column;
@@ -286,7 +287,7 @@ iframe{
     /* display: none; */
     width: 300px;
     position: relative;
-    font-size: .8rem;
+    font-size: 1rem;
     z-index: 2;
     margin-left: -50px;
     margin-top: .7rem;
@@ -300,6 +301,12 @@ iframe{
     position: relative;
     font-size: .8rem;
     text-align: left;
+  }
+  #galeria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
   }
   #about{
     display: flex;
