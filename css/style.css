@@ -261,15 +261,18 @@ iframe{
     font-size: 1.5rem;
     margin-left: 1rem;
   }
+  .title{
+    margin-left: .2rem;
+  }
   #header{
     display: flex;
     flex-direction: column;
     max-height: 100vh;
     margin-bottom: 6rem;
   }
-  #banner-texto{
+  /* #banner-texto{
     margin-bottom: 10rem;
-  }
+  } */
   .banner{
     /* display: none; */
     max-width: 50%;
@@ -277,25 +280,26 @@ iframe{
     /* position: relative; */
     opacity: 0;
     transition: 0.6s;
-    height: 70vh;
+    height: 100vh;
   }
   .banner h2{
     /* display: none; */
     width: 300px;
     position: relative;
-    font-size: 1.5rem;
+    font-size: .8rem;
     z-index: 2;
+    margin-left: -50px;
+    margin-top: .7rem;
   }
   .banner p{
-    margin-top: 4rem;
+    margin-top: 6rem;
     margin-left: -50px;
+    margin-right: 10px;
     padding: 5px;
-    /* margin-bottom: 10px; */
-    /* margin-bottom: 30rem; */
-    width: 370px;
+    width: 230px;
     position: relative;
-    font-size: 1rem;
-    text-align: justify;
+    font-size: .8rem;
+    text-align: left;
   }
   #about{
     display: flex;
