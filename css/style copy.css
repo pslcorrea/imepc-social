@@ -13,7 +13,10 @@
 a{
   text-decoration: none;
 }
-
+/* img{
+  width: 100%;
+} */
+/* Geral */
 .title{
   /* color: var(--fundo); */
   font-size: 2.5rem;
@@ -40,26 +43,28 @@ iframe{
   background-position: center;
   color: var(--primary-color);
   /* margin-bottom: 2rem; */
-  /* position: relative; */
+  position: relative;
 }
 .inner-header{
   display: flex;
-  flex-direction: column;  
+  justify-content: space-between;
+  align-items: center;
 }
 #logo{
   display: flex;
-  justify-content: start;
+  /* display: none; */
+  justify-content: space-between;
   margin-left: 1rem;
 }
 #logo img{
   width: 5rem;
   height: 5em;
 }
-.brand{
+#brand{
   background-color: var(--fundo);
   padding: 1rem;
-  font-size: 1.5rem;
-  /* margin-left: .5rem; */
+  font-size: 2rem;
+  margin-left: 1rem;
 }
 #navbar{
   display: flex;
@@ -78,9 +83,54 @@ iframe{
 #navbar a:hover{
   color: var(--fundo);
 }
-
-
-
+.banner{
+  max-width: 50%;
+  padding: 4rem;
+  position: relative;
+  opacity: 0;
+  transition: 0.6s;
+}
+.banner.active{
+  opacity: 1;
+}
+.banner h2{
+  position: relative;
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+  z-index: 2;
+}
+.banner p{
+  position: absolute;
+  font-size: 1.5rem;
+  text-align: justify;
+  /* bottom: 60rem; */
+}
+.banner span{
+  color: var(--second-color);
+  font-style: italic;
+}
+.square{
+  display: none;
+  width: 10rem;
+  height: 7rem;
+  background-color: var(--fundo);
+  position: absolute;
+  z-index: 1;
+  left: 1.5rem;
+  top: 4rem;
+}
+.dots{
+  display: none;
+  gap: 2rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 3rem;
+}
+.dot.active{
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--fundo);
+}
 .social{
   margin-left: 60rem;
   position: absolute;
@@ -221,14 +271,37 @@ iframe{
     max-height: 100vh;
     margin-bottom: 6rem;
   }
-
-  .banner p{
-    margin: 10px;
-    padding: 5px;
-    width: 95%;
-    font-size: 1rem;
-    text-align: justify;
+  /* #banner-texto{
+    margin-bottom: 10rem;
   } */
+  .banner{
+    /* display: none; */
+    max-width: 50%;
+    padding: 4rem;
+    /* position: relative; */
+    opacity: 0;
+    transition: 0.6s;
+    height: 100vh;
+  }
+  .banner h2{
+    display: none;
+    width: 300px;
+    position: relative;
+    font-size: 1rem;
+    z-index: 2;
+    margin-left: -50px;
+    margin-top: .7rem;
+  }
+  .banner p{
+    margin-top: .1rem;
+    margin-left: -50px;
+    margin-right: 10px;
+    padding: 5px;
+    width: 230px;
+    position: relative;
+    font-size: .8rem;
+    text-align: left;
+  }
   #galeria{
     display: flex;
     flex-direction: column;
