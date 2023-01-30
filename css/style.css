@@ -250,7 +250,7 @@ iframe{
     display: none;
   }
   .menu-mobile{
-    display: none;
+    transform: translateX(-100%);
   }
   .menu-mobile-open{
     transform: translateX(-100%);
@@ -260,7 +260,6 @@ iframe{
     display: flex;
     flex-direction: column;
   }
-
   #brand{
     background-color: var(--fundo);
     padding: 1rem;
