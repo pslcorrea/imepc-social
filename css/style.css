@@ -13,9 +13,9 @@
 a{
   text-decoration: none;
 }
-img{
+/* img{
   width: 100%;
-}
+} */
 /* Geral */
 .title{
   /* color: var(--fundo); */
@@ -242,23 +242,25 @@ iframe{
     /* width: 200px;
     height: 200px; */
   }
+  ion-icon{
+    color: #FFF;
+
+  }
   #navbar a{
     display: none;
   }
-  #menu-mobile{
-    margin-top: 20px;
-    padding-top: 10px;
-    background-color: white;
-    height: 50vh;
+  .menu-mobile{
+    display: none;
+  }
+  .menu-mobile-open{
+    transform: translateX(-100%);
+
   }
   .wrap-menu{
     display: flex;
     flex-direction: column;
   }
-  .btnMenu_open{
-    width: 10%;
-    height: 100%;
-  }
+
   #brand{
     background-color: var(--fundo);
     padding: 1rem;
